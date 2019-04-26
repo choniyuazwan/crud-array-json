@@ -1,7 +1,8 @@
 const routes = `${__dirname}/routes`;
-const ReadRoute = require('./routes/read')
-const CreateRoute = require('./routes/create')
-const UpdateRoute = require('./routes/update')
+const readRoute = require('./routes/read')
+const createRoute = require('./routes/create')
+const updateRoute = require('./routes/update')
+const removeRoute = require('./routes/remove')
 
 import bodyParser from 'body-parser'
 import Express from 'express'
@@ -11,9 +12,10 @@ const port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}))
-app.use(ReadRoute)
-app.use(CreateRoute)
-app.use(UpdateRoute)
+app.use(readRoute)
+app.use(createRoute)
+app.use(updateRoute)
+app.use(removeRoute)
 
 app.listen(port, function(){
   console.log(`listening on port ${port}`);
