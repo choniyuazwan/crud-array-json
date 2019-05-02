@@ -54,14 +54,68 @@ Route.delete('/employee/:nik', (req, res, next) => {
 //     res.json(employee);
 // })
 
-Route.get('/find', (req, res) => {
-    let query = 'SELECT * from `employee` order by nik asc'
+// ===========================================================================================
 
-    db.query =(query, (err, result) => {
+Route.get('/finds', (req, res) => {
+    let query = "SELECT * FROM `employee`";
+
+    db.query(query, (err, result) => {
         if(err) {
             res.json(err)
         } else {
             res.json(result)
+        }
+    })
+})
+
+Route.get('/find/:nik', (req, res) => {
+    let nik = req.params.nik
+    let query = "SELECT * FROM `employee` where nik = "+nik;
+
+    db.query(query, (err, result) => {
+        if(err) {
+            res.json(err)
+        } else {
+            res.json(result)
+        }
+    })
+})
+
+Route.post('/find', (req, res) => {
+    let data = req.body
+    let query = "insert into `employee` values ('"+data.nik+"','"+data.nama+"','"+data.jk+"','"+data.alamat+"','"+data.salary+"','"+data.grade+"')";
+
+    db.query(query, (err, result) => {
+        if(err) {
+            res.json(err)
+        } else {
+            res.json(req.body)
+        }
+    })
+})
+
+Route.delete('/find/:nik', (req, res, next) => {
+    let nik = req.params.nik
+    let query = "delete from `employee` where nik = '"+nik+"'" 
+    db.query(query, (err, result) => {
+        if(err) {
+            res.json(err)
+        } else {
+            res.json(result)
+        }
+    })
+})
+
+Route.put('/find/:nik', (req, res, next) => {
+    let nik = req.params.nik
+    let data = req.body
+    let query = "update `employee` set nama='"+data.nama+"', jk='"+data.jk+"', alamat='"+data.alamat+"', salary='"+data.salary+"', grade='"+data.grade+"' where nik='"+nik+"'";
+
+    db.query(query, (err, result) => {
+        if(err) {
+            res.json(err)
+        } else {
+            res.json(req.body)
         }
     })
 })

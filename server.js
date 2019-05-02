@@ -27,7 +27,7 @@ db.connect((err) => {
   console.log('Connected to database')
 })
 
-global.db = db
+global.db = db;
 
 app.listen(port, function(){
   console.log(`listening on port ${port}`);
