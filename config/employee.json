@@ -1,0 +1,66 @@
+[
+    {
+        "nik": "1",
+        "nama": "budi",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 6000000,
+        "grade": "A"
+    },
+    {
+        "nik": "2",
+        "nama": "ani",
+        "jk": 0,
+        "alamat": "depok",
+        "salary": 6000000,
+        "grade": "B"
+    },
+    {
+        "nik": "4",
+        "nama": "empat",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    },
+    {
+        "nik": "5",
+        "nama": "lima",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    },
+    {
+        "nik": "6",
+        "nama": "enam",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    },
+    {
+        "nik": "7",
+        "nama": "tujuh",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    },
+    {
+        "nik": "8",
+        "nama": "delapan",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    },
+    {
+        "nik": "9",
+        "nama": "sembilan",
+        "jk": 1,
+        "alamat": "depok",
+        "salary": 5000000,
+        "grade": "A"
+    }
+]

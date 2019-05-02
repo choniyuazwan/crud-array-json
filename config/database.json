@@ -1,1 +1,44 @@
-[{"id":2,"username":"dua","fullname":"1 baru","email":"1baru@email.com"},{"id":5,"username":"lima","fullname":"1 baru","email":"1baru@email.com"},{"id":1,"username":"satu baru","fullname":"full name 1","email":"1baru@email.com"},{"id":3,"username":"tiga","fullname":"1 baru","email":"1baru@email.com"},{"id":4,"username":"empat","fullname":"1 baru","email":"1baru@email.com"},{"id":6,"username":"enam","fullname":"1 baru","email":"1baru@email.com"},{"id":7,"username":"tujuh","fullname":"1 baru","email":"1baru@email.com"}]
+[
+    {
+        "id": 2,
+        "username": "dua",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 5,
+        "username": "lima",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 1,
+        "username": "satu baru",
+        "fullname": "full name 1",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 3,
+        "username": "tiga",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 4,
+        "username": "empat",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 6,
+        "username": "enam",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    },
+    {
+        "id": 7,
+        "username": "tujuh",
+        "fullname": "1 baru",
+        "email": "1baru@email.com"
+    }
+]
